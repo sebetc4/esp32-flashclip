@@ -1,0 +1,9 @@
+# Built by cargo
+/target/
+
+# Editors
+.vscode/
+.zed/
+.helix/
+.idea/
+**/*.rs.bk

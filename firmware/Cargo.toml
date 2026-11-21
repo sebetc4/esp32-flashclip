@@ -1,0 +1,15 @@
+[package]
+name                   = "flashclip"
+description            = "serprog SPI flash programmer firmware for the ESP32-C3 SuperMini"
+edition.workspace      = true
+rust-version.workspace = true
+version.workspace      = true
+publish.workspace      = true
+
+[dependencies]
+flashclip-protocol     = { path = "../protocol" }
+esp-hal                = { version = "~1.2.2", features = ["esp32c3", "unstable"] }
+esp-bootloader-esp-idf = { version = "0.6.0", features = ["esp32c3"] }
+critical-section       = "1.2.0"
+esp-backtrace          = { version = "0.20.0", features = ["esp32c3", "panic-handler", "println"] }
+esp-println            = { version = "0.18.0", features = ["esp32c3"] }

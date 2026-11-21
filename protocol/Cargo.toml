@@ -1,0 +1,9 @@
+[package]
+name                   = "flashclip-protocol"
+description            = "The serprog protocol, as flashrom describes it, without hardware"
+edition.workspace      = true
+rust-version.workspace = true
+version.workspace      = true
+publish.workspace      = true
+
+[dependencies]

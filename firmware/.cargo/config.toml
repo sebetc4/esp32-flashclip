@@ -1,0 +1,7 @@
+[build]
+target = "riscv32imc-unknown-none-elf"
+# Backtraces on a panic (esp-backtrace) need frame pointers.
+rustflags = ["-C", "force-frame-pointers"]
+
+[target.riscv32imc-unknown-none-elf]
+runner = "espflash flash --monitor --chip esp32c3"
