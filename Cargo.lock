@@ -690,6 +690,9 @@ dependencies = [
 [[package]]
 name = "flashclip-protocol"
 version = "0.1.0"
+dependencies = [
+ "embedded-io 0.7.1",
+]
 
 [[package]]
 name = "fnv"
