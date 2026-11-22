@@ -4,6 +4,7 @@ description            = "The serprog protocol, as flashrom describes it, withou
 edition.workspace      = true
 rust-version.workspace = true
 version.workspace      = true
+license.workspace      = true
 publish.workspace      = true
 
 [dependencies]

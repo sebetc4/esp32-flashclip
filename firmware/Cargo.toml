@@ -4,6 +4,7 @@ description            = "serprog SPI flash programmer firmware for the ESP32-C3
 edition.workspace      = true
 rust-version.workspace = true
 version.workspace      = true
+license.workspace      = true
 publish.workspace      = true
 
 [dependencies]

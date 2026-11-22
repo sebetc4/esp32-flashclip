@@ -10,6 +10,7 @@ default-members = ["protocol"]
 edition      = "2024"
 rust-version = "1.95"
 version      = "0.1.0"
+license      = "MIT OR Apache-2.0"
 publish      = false
 
 # The default debug profile is too slow and too big for the chip.
