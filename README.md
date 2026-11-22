@@ -54,7 +54,15 @@ PROGRAMMER=serprog:ip=127.0.0.1:7700 IMAGE=… A=a.bin B=b.bin READBACK=… scri
 
 ## Wiring
 
-CS 10, MISO 5, MOSI 7, CLK 6. 3.3 V only: the clip's VCC comes from a
-separate 3.3 V supply, its ground joined to the SuperMini's G, never from the
-SuperMini's 5V or 3.3 pins. The board drives the pins only while flashrom
+CS 10, MISO 5, MOSI 7, CLK 6. The board drives the pins only while flashrom
 runs: before and after, they are inputs, at high impedance.
+
+- 3.3 V only: never the SuperMini's 5V pin on the clip, never a 1.8 V chip
+  without a level shifter. Measure the clip's teeth before it goes on a chip:
+  nothing above 3.6 V.
+- In-circuit, the target board has no power at all: mains, battery, coin cell.
+  The clip's VCC comes from a separate 3.3 V supply, its ground joined to the
+  SuperMini's G; the SuperMini's 3.3 pin stays free, so that two regulators
+  never share a rail.
+- Another pin choice avoids the strapping pins (2, 8, 9), USB (18, 19) and the
+  module's flash (11 to 17).
