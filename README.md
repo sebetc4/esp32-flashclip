@@ -4,9 +4,11 @@ A serprog SPI flash programmer for the ESP32-C3 SuperMini, written in Rust:
 `flashrom -p serprog` reads and writes a 3.3 V SPI flash chip through it, the
 chip held by a clip.
 
-**Status:** the protocol is written and passes flashrom's probe, read, write
-and erase on a simulated chip; the firmware builds. Not yet tried on the
-board.
+**Status:** the protocol passes flashrom's probe, read, write and erase on a
+simulated chip. On the board, it has read and written two Eon chips in
+circuit at 1 MHz, an EN25Q64 and an EN25Q32(A/B): repeated reads identical to
+those of another programmer, each chip erased, written, verified and read back
+identical to its image.
 
 ## Build
 
